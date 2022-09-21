@@ -4,8 +4,13 @@ import dotenv from "dotenv";
 import colors from "colors";
 import morgan from "morgan";
 import connectDB from "./config/db.js";
+import { fileURLToPath } from "url";
 
 dotenv.config({ path: "./config/config.env" });
+
+const __filename = fileURLToPath(import.meta.url);
+
+const __dirname = path.dirname(__filename);
 
 connectDB();
 

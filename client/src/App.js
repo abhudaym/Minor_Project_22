@@ -6,7 +6,6 @@ import "./App.css";
 import Dashboard from "./components/Dashboard";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
-import Test from "./components/Test";
 function App() {
   return (
     <Router>
@@ -15,7 +14,6 @@ function App() {
           <Route index element={<Dashboard />} exact />
           <Route path="/login" element={<SignIn />} />
           <Route path="/register" element={<SignUp />} />
-          <Route path="/test" element={<Test />} />
         </Routes>
       </GlobalContextProvider>
     </Router>
